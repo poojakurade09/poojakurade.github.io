@@ -1,0 +1,77 @@
+<svg viewBox="0 0 420 590" xmlns="http://www.w3.org/2000/svg" style="font-family:monospace">
+<rect width="420" height="590" fill="#FFFFFF"/>
+<rect x="0" y="0" width="420" height="36" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1"/>
+<rect x="182" y="11" width="56" height="14" fill="#D2D2D2" rx="3"/>
+<rect x="14" y="14" width="40" height="8" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<circle cx="32" cy="54" r="9" fill="#D2D2D2" stroke="#C93A2A" stroke-width="1"/>
+<text x="32" y="72" font-family="monospace" font-size="5.5" fill="#C93A2A" text-anchor="middle" font-weight="normal">01 Cart</text>
+<line x1="41" y1="54" x2="118" y2="54" stroke="#C93A2A" stroke-width="1.2"/>
+<circle cx="127" cy="54" r="9" fill="#C93A2A" stroke="#C93A2A" stroke-width="1"/>
+<text x="127" y="72" font-family="monospace" font-size="5.5" fill="#C93A2A" text-anchor="middle" font-weight="normal">02 Address</text>
+<line x1="136" y1="54" x2="213" y2="54" stroke="#D2D2D2" stroke-width="1.2"/>
+<circle cx="222" cy="54" r="9" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<text x="222" y="72" font-family="monospace" font-size="5.5" fill="#999999" text-anchor="middle" font-weight="normal">03 Payment</text>
+<line x1="231" y1="54" x2="308" y2="54" stroke="#D2D2D2" stroke-width="1.2"/>
+<circle cx="317" cy="54" r="9" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<text x="317" y="72" font-family="monospace" font-size="5.5" fill="#999999" text-anchor="middle" font-weight="normal">04 Confirm</text>
+<rect x="4" y="77" width="64" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<text x="8" y="85.5" font-family="monospace" font-size="5.5" fill="#888" text-anchor="start" font-weight="normal">CHECKOUT STEPS</text>
+<rect x="10" y="86" width="228" height="468" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="6"/>
+<rect x="18" y="95" width="80" height="6" fill="#D2D2D2" rx="2"/>
+<rect x="18" y="111" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="121" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="151" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="161" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="191" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="201" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="231" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="241" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="271" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="281" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="311" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="321" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="351" width="44" height="4" fill="#BDBDBD" rx="1"/>
+<rect x="18" y="361" width="200" height="20" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1" rx="4"/>
+<rect x="18" y="395" width="200" height="26" fill="#C93A2A" rx="5" opacity="0.65"/>
+<rect x="14" y="83" width="56" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<text x="18" y="91.5" font-family="monospace" font-size="5.5" fill="#888" text-anchor="start" font-weight="normal">ADDRESS FORM</text>
+<rect x="242" y="86" width="168" height="190" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="6"/>
+<rect x="250" y="95" width="55" height="6" fill="#D2D2D2" rx="2"/>
+<rect x="250" y="112" width="30" height="30" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="250" y1="112" x2="280" y2="142" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="280" y1="112" x2="250" y2="142" stroke="#D2D2D2" stroke-width="1"/>
+<rect x="286" y="116" width="34" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="286" y="128" width="24" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="376" y="120" width="24" height="7" fill="#D2D2D2" rx="2"/>
+<rect x="250" y="154" width="30" height="30" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="250" y1="154" x2="280" y2="184" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="280" y1="154" x2="250" y2="184" stroke="#D2D2D2" stroke-width="1"/>
+<rect x="286" y="158" width="34" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="286" y="170" width="24" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="376" y="162" width="24" height="7" fill="#D2D2D2" rx="2"/>
+<rect x="250" y="196" width="30" height="30" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="250" y1="196" x2="280" y2="226" stroke="#D2D2D2" stroke-width="1"/>
+<line x1="280" y1="196" x2="250" y2="226" stroke="#D2D2D2" stroke-width="1"/>
+<rect x="286" y="200" width="34" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="286" y="212" width="24" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="376" y="204" width="24" height="7" fill="#D2D2D2" rx="2"/>
+<line x1="250" y1="238" x2="402" y2="238" stroke="#D2D2D2" stroke-width="1"/>
+<rect x="250" y="248" width="30" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="376" y="248" width="24" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="250" y="264" width="30" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="376" y="264" width="24" height="5" fill="#BDBDBD" rx="2"/>
+<rect x="250" y="280" width="34" height="5" fill="#D2D2D2" rx="2"/>
+<rect x="376" y="280" width="24" height="5" fill="#D2D2D2" rx="2"/>
+<rect x="242" y="83" width="60" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<text x="246" y="91.5" font-family="monospace" font-size="5.5" fill="#888" text-anchor="start" font-weight="normal">ORDER SUMMARY</text>
+<rect x="242" y="292" width="168" height="180" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="6"/>
+<rect x="250" y="300" width="55" height="6" fill="#D2D2D2" rx="2"/>
+<circle cx="258" cy="322" r="6" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1.5"/>
+<rect x="268" y="318" width="28" height="6" fill="#BDBDBD" rx="2"/>
+<circle cx="258" cy="348" r="6" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1.5"/>
+<rect x="268" y="344" width="50" height="6" fill="#BDBDBD" rx="2"/>
+<circle cx="258" cy="374" r="6" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1.5"/>
+<rect x="268" y="370" width="60" height="6" fill="#BDBDBD" rx="2"/>
+<rect x="242" y="289" width="68" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<text x="246" y="297.5" font-family="monospace" font-size="5.5" fill="#888" text-anchor="start" font-weight="normal">PAYMENT OPTIONS</text>
+</svg>
