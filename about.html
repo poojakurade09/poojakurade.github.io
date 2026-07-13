@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 <style>
 
 /* ── TOKENS ── */
@@ -64,27 +65,26 @@ img { display: block; max-width: 100% }
 /* ── NAV ── */
 #nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  height: 58px; display: flex; align-items: center; justify-content: space-between;
+  height: 58px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
   padding: 0 var(--pad);
   background: rgba(13,43,30,.92);
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px }
+.nav-logo { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; justify-self: start }
 .nav-role { font-size: 13px; font-weight: 400; color: rgba(255,255,255,.45); letter-spacing: 0 }
 @media (max-width: 640px) { .nav-role { display: none } }
-.nav-links { display: flex; list-style: none; gap: 32px; align-items: center }
+.nav-links { display: flex; list-style: none; gap: 28px; align-items: center; justify-self: center }
 .nav-links a { font-size: 14px; font-weight: 500; color: rgba(255,255,255,.55); transition: color .2s }
 .nav-links a:hover, .nav-links a.cur-page { color: #fff }
+.nav-right { display: flex; align-items: center; gap: 22px; justify-self: end }
 .nav-cv {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: var(--ff); font-size: 13px; font-weight: 600;
-  color: #fff; background: #0F6E56;
-  padding: 8px 18px; border-radius: 999px;
-  transition: background .2s, transform .15s;
+  font-family: var(--ff); font-size: 14px; font-weight: 500;
+  color: rgba(255,255,255,.55);
+  transition: color .2s;
   white-space: nowrap;
 }
-.nav-cv:hover { background: #0F6E56; transform: translateY(-1px) }
+.nav-cv:hover { color: #fff }
 .nav-avail {
   font-family: var(--ff-m); font-size: 10px; letter-spacing: .08em;
   color: var(--yellow); display: flex; align-items: center; gap: 6px;
@@ -109,45 +109,52 @@ img { display: block; max-width: 100% }
 #mob a:hover { color: var(--teal) }
 .mob-x { position: absolute; top: 18px; right: var(--pad); font-size: 22px; background: none; border: none; cursor: none; color: var(--white) }
 
-/* ── PAGE HEAD ── */
-.about-head { padding: 150px var(--pad) 0; max-width: 640px; margin: 0 auto }
-.about-eyebrow {
-  font-family: var(--ff-m); font-size: 10px; letter-spacing: .12em;
-  text-transform: uppercase; color: var(--teal); margin-bottom: 16px; display: block;
+/* ── PROFILE / NARRATIVE (matches Figma layout) ── */
+#profile { padding-top: 58px }
+.about-split {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 64px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 6vw, 96px);
+  min-height: calc(100vh - 58px);
 }
+.about-split-text {
+  flex: 1;
+  min-width: 0;
+  padding: 130px 0 60px 0;
+}
+.about-split-text-inner { max-width: 480px }
 .about-back {
   display: inline-flex; align-items: center; gap: 6px;
   font-family: var(--ff-m); font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
   color: var(--mid); margin-bottom: 28px; transition: color .2s;
 }
 .about-back:hover { color: var(--teal) }
-
-/* ── PROFILE / NARRATIVE ── */
-#profile { padding: 24px var(--pad) 40px }
-.narrative-inner { max-width: 640px; margin: 0 auto }
-.narrative-eyebrow {
-  font-family: var(--ff-m); font-size: 11px; letter-spacing: .1em;
-  text-transform: uppercase; color: var(--teal); margin-bottom: 14px; display: block;
-}
 .narrative-heading {
-  font-size: clamp(28px, 4vw, 42px); font-weight: 700;
-  color: var(--white); letter-spacing: -.5px; line-height: 1.15;
-  margin-bottom: 36px; max-width: 22ch;
+  font-family: 'Newsreader', serif;
+  font-size: clamp(30px, 3.8vw, 40px); font-weight: 300;
+  color: #fdfdfd; letter-spacing: -.02em; line-height: 1.2;
+  margin-bottom: 32px; max-width: 20ch;
 }
-.narrative-p { font-size: 17px; color: var(--mid); line-height: 1.85; margin-bottom: 22px }
-.narrative-photo {
-  margin: 40px 0; border-radius: 14px; overflow: hidden;
-  max-width: 320px; background: var(--teal);
+.narrative-p { font-size: 16px; color: var(--mid); line-height: 1.8; margin-bottom: 20px }
+.about-split-photo {
+  position: relative; overflow: hidden; background: var(--teal);
+  flex-shrink: 0;
+  width: 420px; aspect-ratio: 483 / 723;
+  margin-top: 87px;
 }
-.narrative-photo img { width: 100%; display: block; object-fit: cover; object-position: center 12% }
-.narrative-photos-more {
-  display: flex; gap: 12px; margin: 40px 0; flex-wrap: wrap;
+.about-split-photo img {
+  width: 100%; height: 100%; display: block;
+  object-fit: cover; object-position: center 15%;
 }
-.narrative-photos-more img {
-  width: calc(33.33% - 8px); border-radius: 10px; aspect-ratio: 1; object-fit: cover;
-}
-@media(max-width: 640px) {
-  .narrative-photo { max-width: 100% }
+@media(max-width: 900px) {
+  .about-split { flex-direction: column; gap: 0; min-height: 0; padding: 0 clamp(24px, 6vw, 96px) }
+  .about-split-photo { width: 100%; aspect-ratio: auto; min-height: 320px; margin-top: 24px }
+  .about-split-text { padding-top: 48px; order: 1 }
+  .about-split-photo { order: 0 }
 }
 
 /* ── FOOTER ── */
@@ -174,6 +181,7 @@ footer { padding: 32px var(--pad) }
 @media(max-width: 820px) {
   .nav-links { display: none }
   .nav-cv { display: none }
+  .nav-avail { display: none }
   .hamburger { display: flex }
 }
 </style>
@@ -185,6 +193,7 @@ footer { padding: 32px var(--pad) }
 <!-- MOBILE OVERLAY -->
 <div id="mob">
   <button class="mob-x" id="mobX">✕</button>
+  <a href="index.html" onclick="cM()">Home</a>
   <a href="index.html#work" onclick="cM()">Work</a>
   <a href="about.html" onclick="cM()">About</a>
 </div>
@@ -193,50 +202,45 @@ footer { padding: 32px var(--pad) }
 <nav id="nav">
   <a href="index.html" class="nav-logo">Pooja Kurade <span class="nav-role">Senior Product Designer</span></a>
   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
     <li><a href="index.html#work">Work</a></li>
     <li><a href="about.html" class="cur-page">About</a></li>
-    <li><span class="nav-avail"><span class="nav-dot"></span>Available</span></li>
+    <li><a href="pooja_kurade_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
   </ul>
-  <a href="pooja_kurade_resume.pdf" download class="nav-cv">Resume</a>
-  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span></button>
+  <div class="nav-right">
+    <span class="nav-avail"><span class="nav-dot"></span>Available</span>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span></button>
+  </div>
 </nav>
 
-<!-- PAGE HEAD -->
-<div class="about-head">
-  <a href="index.html" class="about-back rv">← Back home</a>
-</div>
-
-<!-- PROFILE / NARRATIVE -->
+<!-- PROFILE / NARRATIVE (two-column split) -->
 <section id="profile">
-  <div class="narrative-inner rv">
-    <span class="narrative-eyebrow">Hey there!</span>
-    <h1 class="narrative-heading">It's me, Pooja, and it's nice to see you here.</h1>
+  <div class="about-split rv">
+    <div class="about-split-text">
+      <div class="about-split-text-inner">
+        <a href="index.html" class="about-back">← Back home</a>
+        <h1 class="narrative-heading">It's me, Pooja - and it's nice to see you here!</h1>
 
-    <p class="narrative-p">
-      Hi, I'm Pooja. Originally from India, now living in Berlin. I've learned this craft mostly by doing: starting in VFX, teaching myself UX, and later formalising that with a CUA certification from Human Factors International.
-    </p>
-    <p class="narrative-p">
-      I'm a curious creative who likes exploring new ideas and possibilities, balanced with a grounded, practical side that likes figuring out what actually works and what it takes to get there.
-    </p>
-
-    <div class="narrative-photo">
+        <p class="narrative-p">
+          I'm a Senior Product Designer originally from India, now based in Berlin. My path here wasn't traditional: I taught myself UX from the ground up, later formalising it with a CUA certification from Human Factors International.
+        </p>
+        <p class="narrative-p">
+          I'm a curious creative at heart, always exploring new ideas and possibilities, balanced with a grounded, practical side that cares about what actually works and what it takes to get there.
+        </p>
+        <p class="narrative-p">
+          Over 8+ years, I've worked across mobile, enterprise, automotive and fintech, bringing both visual craft and structured UX thinking to every project I take on.
+        </p>
+        <p class="narrative-p">
+          What I care about most is building products that are clear, useful, and genuinely easy to live with, ones that hold up in the real world, not just in a mockup.
+        </p>
+        <p class="narrative-p">
+          Outside of work, I'm just as curious, always planning the next trip or trying something new in the kitchen.
+        </p>
+      </div>
+    </div>
+    <div class="about-split-photo">
       <img src="images/about-photo.jpg" alt="Pooja Kurade">
     </div>
-
-    <p class="narrative-p">
-      As a Senior Product Designer with experience across mobile, enterprise, automotive and fintech, I bring both visual craft and structured UX thinking to every project I take on.
-    </p>
-    <p class="narrative-p">
-      My path here wasn't traditional. Working in VFX taught me the value of visual craft, but over time I realised I wanted to shape not just how something looks, but how people actually use it. That realisation led me into UX and product design.
-    </p>
-    <p class="narrative-p">
-      Through my work, I want to help build products that are clear, useful, and genuinely easy to live with, ones that hold up in the real world and not just in a mockup.
-    </p>
-    <p class="narrative-p">
-      Outside of work, I'm just as curious, always planning the next trip or trying something new in the kitchen.
-    </p>
-
-    <!-- More personal photos go here once provided -->
   </div>
 </section>
 

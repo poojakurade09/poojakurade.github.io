@@ -20,7 +20,7 @@
       --light: #F5F5F3;
       --cream: #F2F1EF;
       --border: rgba(0,0,0,.09);
-      --yellow: #F5A623;
+      --yellow: #E8B84B;
       --yellow-l: #FEF3CD;
       --ff: 'Source Sans 3', sans-serif;
       --ff-m: 'Space Mono', monospace;
@@ -249,22 +249,24 @@
 <!-- ── MOBILE OVERLAY ── -->
 <div id="mob">
   <button class="mob-x" id="mobX">✕</button>
+  <a href="index.html" onclick="cM()">Home</a>
   <a href="index.html#work" onclick="cM()">Work</a>
   <a href="about.html" onclick="cM()">About</a>
-  <a href="mailto:pooja.kurade@gmail.com" onclick="cM()">Contact</a>
 </div>
 
 <!-- ── NAV ── -->
 <nav id="nav">
   <a class="nav-logo" href="index.html">Pooja Kurade <span class="nav-role">Senior Product Designer</span></a>
   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
     <li><a href="index.html#work">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="mailto:pooja.kurade@gmail.com">Contact</a></li>
-    <li><span class="nav-avail"><span class="nav-dot"></span>Available</span></li>
+    <li><a href="pooja_kurade_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
   </ul>
-  <a class="nav-cv" href="pooja_kurade_resume.pdf" download>Resume</a>
-  <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span></button>
+  <div class="nav-right">
+    <span class="nav-avail"><span class="nav-dot"></span>Available</span>
+    <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span></button>
+  </div>
 </nav>
 
 <!-- ── HERO ── -->
@@ -740,8 +742,15 @@
 </div>
 
 <!-- ── FOOTER ── -->
-<footer style="background:var(--dark);padding:40px var(--pad);text-align:center;">
-  <p style="font-size:13px;color:rgba(255,255,255,.4);margin:0;">© 2025 Pooja Kurade · UX Designer &amp; Researcher</p>
+<footer style="padding:32px var(--pad);background:var(--cream);border-top:1px solid var(--border);">
+  <div style="max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+    <span style="font-size:16px;font-weight:700;color:var(--dark);">Pooja Kurade.</span>
+    <span style="font-family:var(--ff-m);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mid);display:flex;align-items:center;gap:6px;"><span class="nav-dot"></span>Berlin, Germany</span>
+    <div style="display:flex;gap:24px;">
+      <a href="mailto:pooja.kurade@gmail.com" style="font-size:14px;font-weight:500;color:var(--mid);">Email</a>
+      <a href="https://linkedin.com/in/pooja-kurade" target="_blank" style="font-size:14px;font-weight:500;color:var(--mid);">LinkedIn</a>
+    </div>
+  </div>
 </footer>
 
 <script>
