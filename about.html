@@ -110,7 +110,7 @@ img { display: block; max-width: 100% }
 .mob-x { position: absolute; top: 18px; right: var(--pad); font-size: 22px; background: none; border: none; cursor: none; color: var(--white) }
 
 /* ── PAGE HEAD ── */
-.about-head { padding: 150px var(--pad) 0; max-width: var(--max-w); margin: 0 auto }
+.about-head { padding: 150px var(--pad) 0; max-width: 640px; margin: 0 auto }
 .about-eyebrow {
   font-family: var(--ff-m); font-size: 10px; letter-spacing: .12em;
   text-transform: uppercase; color: var(--teal); margin-bottom: 16px; display: block;
@@ -122,58 +122,32 @@ img { display: block; max-width: 100% }
 }
 .about-back:hover { color: var(--teal) }
 
-/* ── PROFILE (reused) ── */
-#profile { padding: 40px var(--pad) 0 }
-.profile-grid {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  display: grid; grid-template-columns: 400px 1fr;
-  min-height: 580px;
-  background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+/* ── PROFILE / NARRATIVE ── */
+#profile { padding: 24px var(--pad) 40px }
+.narrative-inner { max-width: 640px; margin: 0 auto }
+.narrative-eyebrow {
+  font-family: var(--ff-m); font-size: 11px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--teal); margin-bottom: 14px; display: block;
 }
-.profile-photo-col { position: relative; overflow: hidden; background: var(--teal) }
-.profile-photo-col > img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; display: block }
-.profile-content {
-  padding: clamp(40px, 5vw, 72px) clamp(32px, 5vw, 72px);
-  display: flex; flex-direction: column; justify-content: center;
-  background: var(--bg-alt);
+.narrative-heading {
+  font-size: clamp(28px, 4vw, 42px); font-weight: 700;
+  color: var(--white); letter-spacing: -.5px; line-height: 1.15;
+  margin-bottom: 36px; max-width: 22ch;
 }
-.profile-tag {
-  font-family: var(--ff-m); font-size: 10px; letter-spacing: .12em;
-  text-transform: uppercase; color: var(--teal); margin-bottom: 18px; display: block;
+.narrative-p { font-size: 17px; color: var(--mid); line-height: 1.85; margin-bottom: 22px }
+.narrative-photo {
+  margin: 40px 0; border-radius: 14px; overflow: hidden;
+  max-width: 320px; background: var(--teal);
 }
-.profile-name {
-  font-size: clamp(36px, 4.5vw, 56px); font-weight: 700;
-  color: var(--white); letter-spacing: -1.5px; line-height: 1.02;
-  margin-bottom: 6px;
+.narrative-photo img { width: 100%; display: block; object-fit: cover; object-position: center 12% }
+.narrative-photos-more {
+  display: flex; gap: 12px; margin: 40px 0; flex-wrap: wrap;
 }
-.profile-role {
-  font-size: 15px; color: var(--teal); font-weight: 500;
-  margin-bottom: 28px; display: flex; align-items: center; gap: 10px;
+.narrative-photos-more img {
+  width: calc(33.33% - 8px); border-radius: 10px; aspect-ratio: 1; object-fit: cover;
 }
-.profile-role::after { content: ''; flex: 1; max-width: 60px; height: 1px; background: var(--teal); opacity: .35 }
-.profile-bio { font-size: 16px; color: var(--mid); line-height: 1.8; margin-bottom: 12px; max-width: 440px }
-.profile-stats { display: flex; gap: 32px; margin: 28px 0 28px; flex-wrap: wrap }
-.stat-n { font-size: 40px; font-weight: 700; color: var(--teal); line-height: 1; letter-spacing: -1.5px }
-.stat-n em { color: var(--teal); font-style: normal }
-.stat-l { font-size: 12px; color: var(--mid); margin-top: 3px }
-.profile-skills { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 28px }
-.sk {
-  font-family: var(--ff-m); font-size: 10px; letter-spacing: .04em;
-  padding: 5px 14px; border-radius: 999px;
-  background: var(--bg-raise); border: 1px solid var(--border); color: var(--mid);
-}
-.profile-cta {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 14px; font-weight: 600; color: var(--dark);
-  background: var(--teal); padding: 12px 28px; border-radius: 999px;
-  transition: background .2s, transform .2s; cursor: none; width: fit-content;
-}
-.profile-cta:hover { transform: translateY(-2px) }
-@media(max-width: 900px) {
-  .profile-grid { grid-template-columns: 1fr }
-  .profile-photo-col { min-height: 420px }
-  .profile-stats { gap: 24px }
+@media(max-width: 640px) {
+  .narrative-photo { max-width: 100% }
 }
 
 /* ── FOOTER ── */
@@ -213,7 +187,6 @@ footer { padding: 32px var(--pad) }
   <button class="mob-x" id="mobX">✕</button>
   <a href="index.html#work" onclick="cM()">Work</a>
   <a href="about.html" onclick="cM()">About</a>
-  <a href="mailto:pooja.kurade@gmail.com" onclick="cM()">Contact</a>
 </div>
 
 <!-- NAV -->
@@ -222,75 +195,48 @@ footer { padding: 32px var(--pad) }
   <ul class="nav-links">
     <li><a href="index.html#work">Work</a></li>
     <li><a href="about.html" class="cur-page">About</a></li>
-    <li><a href="mailto:pooja.kurade@gmail.com">Contact</a></li>
     <li><span class="nav-avail"><span class="nav-dot"></span>Available</span></li>
   </ul>
-  <a href="pooja_kurade_resume.pdf" download class="nav-cv">Download CV</a>
+  <a href="pooja_kurade_resume.pdf" download class="nav-cv">Resume</a>
   <button class="hamburger" id="ham" aria-label="Menu"><span></span><span></span></button>
 </nav>
 
 <!-- PAGE HEAD -->
 <div class="about-head">
   <a href="index.html" class="about-back rv">← Back home</a>
-  <span class="about-eyebrow rv">About</span>
 </div>
 
-<!-- PROFILE -->
+<!-- PROFILE / NARRATIVE -->
 <section id="profile">
-  <div class="profile-grid rv">
-    <!-- Photo side -->
-    <div class="profile-photo-col">
+  <div class="narrative-inner rv">
+    <span class="narrative-eyebrow">Hey there!</span>
+    <h1 class="narrative-heading">It's me, Pooja, and it's nice to see you here.</h1>
+
+    <p class="narrative-p">
+      Hi, I'm Pooja. Originally from India, now living in Berlin. I've learned this craft mostly by doing: starting in VFX, teaching myself UX, and later formalising that with a CUA certification from Human Factors International.
+    </p>
+    <p class="narrative-p">
+      I'm a curious creative who likes exploring new ideas and possibilities, balanced with a grounded, practical side that likes figuring out what actually works and what it takes to get there.
+    </p>
+
+    <div class="narrative-photo">
       <img src="images/about-photo.jpg" alt="Pooja Kurade">
     </div>
 
-    <!-- Content side -->
-    <div class="profile-content">
-      <span class="profile-tag">About me</span>
-      <h2 class="profile-name">Pooja<br>Kurade.</h2>
-      <div class="profile-role">Senior Product Designer · Berlin</div>
-      <p class="profile-bio">
-        Hi, I'm Pooja. Originally from India, now living in Berlin. I've learned this craft mostly by doing: starting in VFX, teaching myself UX, and later formalising that with a CUA certification from Human Factors International.
-      </p>
-      <p class="profile-bio">
-        I'm a curious creative who likes exploring new ideas and possibilities, balanced with a grounded, practical side that likes figuring out what actually works and what it takes to get there.
-      </p>
-      <p class="profile-bio">
-        As a Senior Product Designer with experience across mobile, enterprise, automotive and fintech, I bring both visual craft and structured UX thinking to every project I take on.
-      </p>
-      <p class="profile-bio">
-        My path here wasn't traditional. Working in VFX taught me the value of visual craft, but over time I realised I wanted to shape not just how something looks, but how people actually use it. That realisation led me into UX and product design.
-      </p>
-      <p class="profile-bio">
-        Through my work, I want to help build products that are clear, useful, and genuinely easy to live with, ones that hold up in the real world and not just in a mockup.
-      </p>
-      <p class="profile-bio">
-        Outside of work, I'm just as curious, always planning the next trip or trying something new in the kitchen.
-      </p>
-      <div class="profile-stats">
-        <div>
-          <div class="stat-n">8<em>+</em></div>
-          <div class="stat-l">Years exp.</div>
-        </div>
-        <div>
-          <div class="stat-n">5<em>+</em></div>
-          <div class="stat-l">Industries</div>
-        </div>
-        <div>
-          <div class="stat-n">20<em>+</em></div>
-          <div class="stat-l">Products</div>
-        </div>
-      </div>
-      <div class="profile-skills">
-        <span class="sk">Product Strategy</span>
-        <span class="sk">UX Research</span>
-        <span class="sk">Interaction Design</span>
-        <span class="sk">Design Systems</span>
-        <span class="sk">Figma</span>
-        <span class="sk">Prototyping</span>
-        <span class="sk">Visual Design</span>
-      </div>
-      <a href="mailto:pooja.kurade@gmail.com" class="profile-cta">Get in touch →</a>
-    </div>
+    <p class="narrative-p">
+      As a Senior Product Designer with experience across mobile, enterprise, automotive and fintech, I bring both visual craft and structured UX thinking to every project I take on.
+    </p>
+    <p class="narrative-p">
+      My path here wasn't traditional. Working in VFX taught me the value of visual craft, but over time I realised I wanted to shape not just how something looks, but how people actually use it. That realisation led me into UX and product design.
+    </p>
+    <p class="narrative-p">
+      Through my work, I want to help build products that are clear, useful, and genuinely easy to live with, ones that hold up in the real world and not just in a mockup.
+    </p>
+    <p class="narrative-p">
+      Outside of work, I'm just as curious, always planning the next trip or trying something new in the kitchen.
+    </p>
+
+    <!-- More personal photos go here once provided -->
   </div>
 </section>
 
