@@ -48,7 +48,9 @@ nav {
   border-bottom: 1px solid rgba(255,255,255,.07);
   transition: background .3s;
 }
-.nav-logo { font-size: 17px; font-weight: 700; letter-spacing: -.02em; color: #fff; }
+.nav-logo { font-size: 17px; font-weight: 700; letter-spacing: -.02em; color: #fff; display: flex; align-items: center; gap: 10px; }
+.nav-role { font-size: 13px; font-weight: 400; letter-spacing: 0; color: rgba(255,255,255,.45); }
+@media (max-width: 640px) { .nav-role { display: none; } }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .nav-links a { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.55); transition: color .2s }
 .nav-links a:hover { color: #fff }
