@@ -252,6 +252,30 @@ img { display: block; max-width: 100% }
   transition: color .2s var(--ease);
 }
 
+/* Toolkit & methods strip */
+.hero-kit {
+  margin-top: 40px;
+  opacity: 0; animation: up .55s var(--ease) .45s forwards;
+}
+.hero-kit-label {
+  display: block;
+  font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(255,255,255,.65); margin-bottom: 14px; font-weight: 400;
+  font-family: 'Instrument Sans', var(--ff), sans-serif;
+}
+.hero-kit-tags {
+  list-style: none; display: flex; flex-wrap: wrap; gap: 8px;
+  padding: 0; margin: 0;
+}
+.hero-kit-tags li {
+  font-family: var(--ff-m); font-size: 11px; letter-spacing: .02em;
+  color: rgba(255,255,255,.72);
+  padding: 6px 14px; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.05);
+  transition: border-color .2s, color .2s;
+}
+.hero-kit-tags li:hover { border-color: var(--teal); color: #fff }
+
 /* Rotating badge */
 .badge-wrap {
   position: absolute; top: 0; right: 0;
@@ -561,7 +585,7 @@ footer { padding: 32px var(--pad) }
     <li><a href="index.html" class="cur-page">Home</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="pooja_kurade_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="Pooja_Kurade_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
   </ul>
   <div class="nav-right">
     <span class="nav-avail"><span class="nav-dot"></span>Available</span>
@@ -586,6 +610,10 @@ footer { padding: 32px var(--pad) }
         <!-- Meta list -->
         <dl class="hero-meta">
           <div class="hero-meta-item">
+            <dt>Experience</dt>
+            <dd>8+ years · Senior Product Designer</dd>
+          </div>
+          <div class="hero-meta-item">
             <dt>Based</dt>
             <dd>Berlin, Germany (open to relocate)</dd>
           </div>
@@ -594,14 +622,24 @@ footer { padding: 32px var(--pad) }
             <dd>Product UX/UI, Design Systems</dd>
           </div>
           <div class="hero-meta-item">
-            <dt>Languages</dt>
-            <dd>English</dd>
-          </div>
-          <div class="hero-meta-item">
             <dt>Open for</dt>
-            <dd>Full-time roles</dd>
+            <dd>Full-time roles · Immediate joiner</dd>
           </div>
         </dl>
+
+        <!-- Toolkit & methods strip (recruiter scan) -->
+        <div class="hero-kit">
+          <span class="hero-kit-label">Toolkit &amp; methods</span>
+          <ul class="hero-kit-tags">
+            <li>Figma</li>
+            <li>Design Systems</li>
+            <li>UX Research</li>
+            <li>Usability Testing</li>
+            <li>Wireframing &amp; Prototyping</li>
+            <li>Information Architecture</li>
+            <li>Interaction &amp; Visual Design</li>
+          </ul>
+        </div>
       </div>
 
       <!-- Photo (placeholder — swap with your headshot) -->
@@ -659,7 +697,7 @@ footer { padding: 32px var(--pad) }
 
       <!-- 04 AI Portfolio -->
       <li class="proj-item rv d4">
-        <a href="#" class="proj-link">
+        <a href="pooja_kurade_casestudy_ai.html" class="proj-link">
           <div class="proj-title">Portfolio Redesign with AI</div>
           <div class="proj-meta">
             <span>Process</span><span class="proj-meta-sep">·</span>

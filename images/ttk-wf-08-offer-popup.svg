@@ -1,0 +1,48 @@
+<svg viewBox="0 0 420 590" xmlns="http://www.w3.org/2000/svg" style="font-family:monospace">
+<rect width="420" height="590" fill="#FFFFFF"/>
+<rect x="0" y="0" width="420" height="36" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" opacity="0.5"/>
+<rect x="10" y="11" width="54" height="14" fill="#D2D2D2" rx="3" opacity="0.5"/>
+<rect x="396" y="10" width="14" height="16" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1" rx="2" opacity="0.5"/>
+
+<!-- Dimmed hero background -->
+<rect x="4" y="42" width="52" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2" opacity="0.6"/>
+<text x="8" y="50.5" font-size="5.5" fill="#aaa" opacity="0.7">HERO (dimmed)</text>
+<rect x="0" y="44" width="420" height="546" fill="#E8E8E8" opacity="0.45"/>
+<rect x="18" y="220" width="180" height="16" fill="rgba(190,190,190,0.5)" rx="3"/>
+<rect x="18" y="242" width="140" height="10" fill="rgba(190,190,190,0.4)" rx="3"/>
+
+<!-- Modal overlay dark scrim -->
+<rect x="0" y="44" width="420" height="546" fill="#000000" opacity="0.28"/>
+
+<!-- Modal card -->
+<rect x="4" y="228" width="46" height="10" fill="#F4F4F4" stroke="#D2D2D2" stroke-width="1" rx="2"/>
+<text x="8" y="236.5" font-size="5.5" fill="#888">MODAL</text>
+<rect x="34" y="232" width="352" height="240" fill="#FFFFFF" stroke="#D2D2D2" stroke-width="1.5"/>
+
+<!-- close icon -->
+<circle cx="368" cy="250" r="9" fill="none" stroke="#BDBDBD" stroke-width="1"/>
+<line x1="365" y1="247" x2="371" y2="253" stroke="#BDBDBD" stroke-width="1"/>
+<line x1="371" y1="247" x2="365" y2="253" stroke="#BDBDBD" stroke-width="1"/>
+
+<!-- image half -->
+<rect x="212" y="232" width="174" height="240" fill="#E8E8E8" stroke="#D2D2D2" stroke-width="1"/>
+<circle cx="299" cy="330" r="20" fill="#D2D2D2"/>
+
+<!-- text half -->
+<rect x="54" y="268" width="140" height="12" fill="#333" rx="2"/>
+<rect x="54" y="284" width="120" height="12" fill="#333" rx="2"/>
+<rect x="54" y="316" width="150" height="6" fill="#BDBDBD" rx="2"/>
+<rect x="54" y="328" width="130" height="6" fill="#BDBDBD" rx="2"/>
+
+<rect x="54" y="356" width="152" height="24" fill="#C93A2A" opacity="0.6" rx="4"/>
+<text x="130" y="372" font-size="7" fill="#fff" text-anchor="middle">SIGN UP</text>
+
+<rect x="54" y="392" width="80" height="8" fill="none" rx="2"/>
+<text x="54" y="399" font-size="6" fill="#999" text-decoration="underline">NO, THANKS</text>
+
+<!-- Carousel dots below (site content) -->
+<circle cx="200" cy="530" r="3" fill="#BDBDBD"/>
+<circle cx="212" cy="530" r="3" fill="#D2D2D2"/>
+<circle cx="224" cy="530" r="3" fill="#D2D2D2"/>
+<circle cx="236" cy="530" r="3" fill="#D2D2D2"/>
+</svg>
