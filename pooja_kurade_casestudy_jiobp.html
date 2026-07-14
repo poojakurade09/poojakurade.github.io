@@ -1082,7 +1082,8 @@ footer { padding: 32px var(--pad); background: var(--cream); border-top: 1px sol
 .cs-amenity-icon img { width: 34px; height: 34px; object-fit: contain; }
 .cs-amenity-label { font-size: 11px; color: var(--mid); text-align: center; line-height: 1.4; }
 @media (max-width: 900px) { .cs-amenities-grid { grid-template-columns: repeat(4, 1fr); } .cs-amenities-wrap { padding: 28px 20px; } }
-@media (max-width: 560px) { .cs-amenities-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 480px) { .cs-amenities-grid { grid-template-columns: repeat(3, 1fr); } .cs-amenity-icon { width: 56px; height: 56px; } .cs-amenity-icon img { width: 28px; height: 28px; } }
+@media (max-width: 360px) { .cs-amenities-grid { grid-template-columns: repeat(2, 1fr); } }
 
 
 /* ── Research Methods ──────────────────────────────── */
@@ -1378,6 +1379,7 @@ h3 {
 </style>
 <!-- Shared component system — overrides in-file stale declarations -->
 <link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="interactions.css">
 </head>
 <body>
 
@@ -1398,7 +1400,7 @@ h3 {
     <li><a href="index.html">Home</a></li>
     <li><a href="index.html#work">Work</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="pooja_kurade_resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    <li><a href="Pooja_Kurade_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
   </ul>
   <div class="nav-right">
     <span class="nav-avail"><span class="nav-dot"></span>Available</span>
@@ -1443,40 +1445,16 @@ h3 {
         </div>
         <div class="cs-hmeta-item">
           <span class="cs-hmeta-label">Team</span>
-          <div class="cs-hmeta-value">Product, Business Stakeholders</div>
+          <div class="cs-hmeta-value">Sole UX/UI Designer · 2 Engineers · Product Manager</div>
         </div>
         <div class="cs-hmeta-item">
           <span class="cs-hmeta-label">Scope</span>
-          <div class="cs-hmeta-value">Research, UX strategy, Wireframes, UI design</div>
+          <div class="cs-hmeta-value">Research · UX Strategy · Wireframes · UI Design · Prototyping · Usability Testing</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- OVERVIEW STRIP -->
-<section class="cs-overview">
-  <div class="cs-meta-grid">
-    <div class="cs-meta-item rv">
-      <span class="cs-meta-label">Role</span>
-      <span class="cs-meta-value">Lead UX/UI Designer</span>
-    </div>
-    <div class="cs-meta-item rv">
-      <span class="cs-meta-label">Timeline</span>
-      <span class="cs-meta-value">4 Weeks</span>
-    </div>
-    <div class="cs-meta-item rv">
-      <span class="cs-meta-label">Team</span>
-      <span class="cs-meta-value">Sole UX/UI Designer · 2 Engineers · Product Manager</span>
-    </div>
-    <div class="cs-meta-item rv">
-      <span class="cs-meta-label">Scope</span>
-      <span class="cs-meta-value">Research · UX Strategy · Wireframes · UI Design · Prototyping · Usability Testing</span>
-    </div>
-  </div>
-</section>
-
-
 
 
 <!-- BACKGROUND -->
@@ -2068,5 +2046,6 @@ document.querySelectorAll('.rv').forEach(el => obs.observe(el));
 document.querySelectorAll('.cs-wf-screen').forEach(el => obs.observe(el));
 document.querySelectorAll('.cf-card').forEach(el => obs.observe(el));
 </script>
+<script src="interactions.js" defer></script>
 </body>
 </html>
