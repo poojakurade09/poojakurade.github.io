@@ -565,6 +565,7 @@ footer { padding: 32px var(--pad) }
   .stat-n { font-size: 36px }
 }
 </style>
+<link rel="stylesheet" href="interactions.css">
 </head>
 <body>
 
@@ -819,6 +820,21 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target) } });
 }, { threshold: 0.06 });
 document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+// Nav scroll-spy: highlight Home vs Work based on scroll position
+const spyHome = document.querySelector('.nav-links a[href="index.html"]');
+const spyWork = document.querySelector('.nav-links a[href="#work"]');
+const workSection = document.getElementById('work');
+function updateNav() {
+  if (!workSection || !spyHome || !spyWork) return;
+  const trigger = workSection.getBoundingClientRect().top <= window.innerHeight * 0.4;
+  spyWork.classList.toggle('cur-page', trigger);
+  spyHome.classList.toggle('cur-page', !trigger);
+}
+window.addEventListener('scroll', updateNav, { passive: true });
+window.addEventListener('resize', updateNav);
+updateNav();
 </script>
+<script src="interactions.js" defer></script>
 </body>
 </html>
