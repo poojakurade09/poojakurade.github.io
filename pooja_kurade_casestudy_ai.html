@@ -11,7 +11,7 @@
 <link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
 <style>
 /* ── TOKENS ── */
 :root {
@@ -26,8 +26,9 @@
   --yellow:   #E8B84B;
   --yellow-l: #FBF3DE;
   --border:   rgba(0,0,0,0.08);
-  --ff:       'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --ff-m:     'Space Mono', monospace;
+  --ff:       'Inter', system-ui, sans-serif;
+  --ff-m:     'Inter', system-ui, sans-serif;
+  --ff-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
   --ff-s:     'Newsreader', Georgia, serif;
   --pad:      clamp(24px, 6vw, 96px);
   --max-w:    1060px;
@@ -296,7 +297,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin: 0 0 14px; }
 /* ── FOOTER ── */
 footer { padding: 32px var(--pad); background: #0D2B1E; }
 .ft { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; border-top: 1px solid rgba(255,255,255,.1); padding-top: 28px; }
-.ft-logo { font-size: 16px; font-weight: 700; color: #fff }
+.ft-logo { font-family: var(--ff-display); font-size: 16px; font-weight: 700; color: #fff }
 .ft-loc { font-family: var(--ff-m); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.55); display: flex; align-items: center; gap: 6px; }
 .ft-links { display: flex; gap: 24px }
 .ft-links a { font-size: 14px; font-weight: 500; color: rgba(255,255,255,.55); transition: color .2s }

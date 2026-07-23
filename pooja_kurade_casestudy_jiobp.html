@@ -9,7 +9,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
 <link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ── TOKENS ── */
 :root {
@@ -26,8 +27,9 @@
   --jio-green:#1B6B2F;
   --jio-mid:  #2B8A3E;
   --border:   rgba(0,0,0,0.08);
-  --ff:  'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --ff-m: 'Space Mono', monospace;
+  --ff:  'Inter', system-ui, sans-serif;
+  --ff-m: 'Inter', system-ui, sans-serif;
+  --ff-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
   --pad:  clamp(24px, 6vw, 96px);
   --max-w: 1060px;
   --ease: cubic-bezier(0.4,0,0.2,1);
@@ -66,7 +68,8 @@ nav {
   transition: background .3s;
 }
 .nav-logo {
-  font-size: 17px; font-weight: 700; letter-spacing: -.02em;
+  font-family: var(--ff-display);
+  font-size: 17px; font-weight: 700; letter-spacing: -.01em;
   color: #fff; justify-self: start;
 }
 .nav-links {
@@ -457,6 +460,7 @@ nav {
   text-transform: uppercase; color: var(--teal); display: block; margin-bottom: 8px;
 }
 .cf-title {
+  font-family: var(--ff-display);
   font-size: 17px; font-weight: 700; color: var(--dark);
   margin-bottom: 8px; line-height: 1.3;
 }
@@ -583,8 +587,9 @@ nav {
   --jio-green:#1B6B2F;
   --jio-mid:  #2B8A3E;
   --border:   rgba(0,0,0,0.08);
-  --ff:  'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --ff-m: 'Space Mono', monospace;
+  --ff:  'Inter', system-ui, sans-serif;
+  --ff-m: 'Inter', system-ui, sans-serif;
+  --ff-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
   --pad:  clamp(24px, 6vw, 96px);
   --max-w: 1060px;
   --ease: cubic-bezier(0.4,0,0.2,1);
@@ -622,7 +627,8 @@ nav {
   transition: background .3s;
 }
 .nav-logo {
-  font-size: 17px; font-weight: 700; letter-spacing: -.02em;
+  font-family: var(--ff-display);
+  font-size: 17px; font-weight: 700; letter-spacing: -.01em;
   color: #fff; justify-self: start;
 }
 .nav-links {
@@ -1049,7 +1055,7 @@ footer { padding: 32px var(--pad); background: var(--cream); border-top: 1px sol
   max-width: var(--max-w); margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-.ft-logo { font-size: 16px; font-weight: 700; color: var(--dark) }
+.ft-logo { font-family: var(--ff-display); font-size: 16px; font-weight: 700; color: var(--dark) }
 .ft-loc {
   font-family: var(--ff-m); font-size: 10px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--mid);
@@ -1255,7 +1261,7 @@ footer { padding: 32px var(--pad); background: var(--cream); border-top: 1px sol
 
 /* ── Competitive Analysis ──────────────────────────────── */
 .comp-analysis { margin: 36px 0 40px; }
-.comp-title { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.comp-title { font-family: var(--ff-display); font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
 .comp-table-wrap { overflow-x: auto; margin-bottom: 16px; }
 .comp-table {
   width: 100%; border-collapse: collapse; font-size: 13px;

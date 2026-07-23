@@ -21,6 +21,7 @@ body {
 }
 a { text-decoration: none; color: inherit }
 img { display: block; max-width: 100% }
+h1, h2, h3, h4, h5, h6 { font-family: var(--ff-display); }
 
 /* ─────────────────────────────────────────────
    CURSOR
@@ -48,7 +49,7 @@ nav {
   border-bottom: 1px solid rgba(255,255,255,.07);
   transition: background .3s;
 }
-.nav-logo { font-size: 17px; font-weight: 700; letter-spacing: -.02em; color: #fff; display: flex; align-items: center; gap: 10px; justify-self: start; }
+.nav-logo { font-family: var(--ff-display); font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: #fff; display: flex; align-items: center; gap: 10px; justify-self: start; }
 .nav-role { font-size: 13px; font-weight: 400; letter-spacing: 0; color: rgba(255,255,255,.45); }
 @media (max-width: 640px) { .nav-role { display: none; } }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; justify-self: center; }
@@ -86,7 +87,7 @@ nav {
 }
 .nav-cv {
   display: inline-flex; align-items: center; gap: 6px;
-  font-family: var(--ff); font-size: 13px; font-weight: 600;
+  font-family: var(--ff-display); font-size: 13px; font-weight: 600;
   color: #fff; background: #0F6E56;
   padding: 8px 18px; border-radius: 999px;
   transition: background .2s, transform .15s; white-space: nowrap;
@@ -189,7 +190,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
   font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
   color: var(--teal); font-family: var(--ff-m); margin-bottom: 6px;
 }
-.proc-title { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.proc-title { font-family: var(--ff-display); font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
 .proc-desc { font-size: 13px; color: var(--mid); line-height: 1.6; }
 .proc-arrow {
   display: flex; align-items: flex-start; padding-top: 26px;
@@ -220,7 +221,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
 }
 .cs-insight-icon svg { width: 20px; height: 20px; stroke: currentColor; fill: none; }
 .cs-insight-num { font-family: var(--ff-m); font-size: 9px; letter-spacing: .13em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
-.cs-insight-title { font-size: 15px; font-weight: 600; color: var(--dark); line-height: 1.4; margin-bottom: 8px; }
+.cs-insight-title { font-family: var(--ff-display); font-size: 15px; font-weight: 600; color: var(--dark); line-height: 1.4; margin-bottom: 8px; }
 .cs-insight-desc { font-size: 13.5px; color: var(--mid); line-height: 1.7; }
 @media(max-width:768px){ .cs-insights-grid { grid-template-columns: 1fr; } }
 
@@ -249,7 +250,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
   padding: 3px 10px; border-radius: 20px; display: inline-block;
   margin-bottom: 8px; width: fit-content;
 }
-.persona-name { font-size: 20px; font-weight: 700; color: var(--dark); }
+.persona-name { font-family: var(--ff-display); font-size: 20px; font-weight: 700; color: var(--dark); }
 .persona-role { font-size: 14px; color: var(--mid); margin-top: 3px; }
 .persona-body { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .persona-col-title {
@@ -276,7 +277,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   border-top: 3px solid var(--teal);
 }
-.outcome-metric { font-size: 44px; font-weight: 800; color: var(--teal); font-family: var(--ff-m); line-height: 1; }
+.outcome-metric { font-size: 44px; font-weight: 800; color: var(--teal); font-family: var(--ff-display); line-height: 1; }
 .outcome-metric span { font-size: 28px; }
 .outcome-label { margin-top: 10px; font-size: 14px; color: var(--mid); line-height: 1.4; }
 .outcome-before { font-size: 11px; color: var(--mid); font-style: italic; display: block; margin-bottom: 12px; line-height: 1.4; }
@@ -314,7 +315,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
 .ds-proto-btn {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--teal); color: #fff;
-  font-family: var(--ff); font-size: 15px; font-weight: 600;
+  font-family: var(--ff-display); font-size: 15px; font-weight: 600;
   padding: 14px 32px; border-radius: 100px;
   letter-spacing: 0.01em;
   transition: background .2s, transform .2s;

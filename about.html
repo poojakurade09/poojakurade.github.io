@@ -9,11 +9,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
 <link rel="icon" href="images/favicon.ico">
-<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
 /* ── TOKENS ── */
@@ -32,8 +30,9 @@
   --yellow:   #E8B84B;
   --yellow-l: rgba(232,184,75,.14);
   --border:   rgba(255,255,255,.10);
-  --ff:  'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --ff-m: 'Space Mono', monospace;
+  --ff:  'Inter', system-ui, sans-serif;
+  --ff-m: 'Inter', system-ui, sans-serif;
+  --ff-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
   --pad:  clamp(24px, 6vw, 96px);
   --max-w: 1060px;
   --ease: cubic-bezier(0.4,0,0.2,1);
@@ -71,7 +70,7 @@ img { display: block; max-width: 100% }
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
-.nav-logo { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.02em; display: flex; align-items: center; gap: 10px; justify-self: start }
+.nav-logo { font-family: var(--ff-display); font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.01em; display: flex; align-items: center; gap: 10px; justify-self: start }
 .nav-role { font-size: 13px; font-weight: 400; color: rgba(255,255,255,.45); letter-spacing: 0 }
 @media (max-width: 640px) { .nav-role { display: none } }
 .nav-links { display: flex; list-style: none; gap: 28px; align-items: center; justify-self: center }
@@ -79,7 +78,7 @@ img { display: block; max-width: 100% }
 .nav-links a:hover, .nav-links a.cur-page { color: #fff }
 .nav-right { display: flex; align-items: center; gap: 22px; justify-self: end }
 .nav-cv {
-  font-family: var(--ff); font-size: 14px; font-weight: 500;
+  font-family: var(--ff-display); font-size: 14px; font-weight: 500;
   color: rgba(255,255,255,.55);
   transition: color .2s;
   white-space: nowrap;
@@ -136,8 +135,8 @@ img { display: block; max-width: 100% }
 }
 .about-back:hover { color: #fff; opacity: .78 }
 .narrative-heading {
-  font-family: 'Newsreader', serif;
-  font-size: clamp(30px, 3.8vw, 40px); font-weight: 300;
+  font-family: var(--ff-display);
+  font-size: clamp(30px, 3.8vw, 40px); font-weight: 500;
   color: #fdfdfd; letter-spacing: -.02em; line-height: 1.2;
   margin-bottom: 32px; max-width: 20ch;
 }
@@ -176,7 +175,7 @@ footer { padding: 32px var(--pad) }
   flex-wrap: wrap; gap: 14px;
   border-top: 1px solid var(--border); padding-top: 28px;
 }
-.ft-logo { font-size: 16px; font-weight: 700; color: var(--white) }
+.ft-logo { font-family: var(--ff-display); font-size: 16px; font-weight: 700; color: var(--white) }
 .ft-loc {
   font-family: var(--ff-m); font-size: 10px; letter-spacing: .08em;
   text-transform: uppercase; color: var(--mid);

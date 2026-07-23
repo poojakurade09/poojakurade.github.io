@@ -10,7 +10,7 @@
 <link rel="icon" href="images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 /* ── TOKENS ── */
 :root {
@@ -25,8 +25,9 @@
   --yellow:   #E8B84B;
   --yellow-l: #FDF3DC;
   --border:   rgba(0,0,0,0.08);
-  --ff:       'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --ff-m:     'Space Mono', monospace;
+  --ff:       'Inter', system-ui, sans-serif;
+  --ff-m:     'Inter', system-ui, sans-serif;
+  --ff-display: 'Bricolage Grotesque', 'Inter', system-ui, sans-serif;
   --pad:      clamp(24px, 6vw, 96px);
   --max-w:    1060px;
   --ease:     cubic-bezier(0.4,0,0.2,1);
@@ -213,7 +214,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
 .comp-criteria { font-size: 13px; font-weight: 600; color: var(--dark); line-height: 1.4; }
 .comp-brand-head { display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .comp-logo { height: 48px; width: auto; max-width: 130px; object-fit: contain; }
-.comp-brand-name { font-size: 14px; font-weight: 700; color: var(--dark); }
+.comp-brand-name { font-family: var(--ff-display); font-size: 14px; font-weight: 700; color: var(--dark); }
 .comp-brand-tag {
   font-family: var(--ff-m); font-size: 9px; letter-spacing: .08em; text-transform: uppercase;
   background: var(--teal-l); color: var(--teal);
@@ -284,10 +285,10 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
   font-family: var(--ff-m); font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
   color: var(--teal); margin-bottom: 14px;
 }
-.fd-h { color: var(--dark); font-size: 26px; font-weight: 700; letter-spacing: -.45px; margin: 0 0 10px; line-height: 1.2; }
+.fd-h { font-family: var(--ff-display); color: var(--dark); font-size: 26px; font-weight: 700; letter-spacing: -.01em; margin: 0 0 10px; line-height: 1.2; }
 .fd-p { color: var(--mid); font-size: 14.5px; line-height: 1.7; margin: 0; max-width: 500px; }
 .fd-deco-num {
-  font-family: var(--ff-m); font-size: 72px; font-weight: 700;
+  font-family: var(--ff-display); font-size: 72px; font-weight: 700;
   color: rgba(0,0,0,0.05); line-height: 1;
   flex-shrink: 0; user-select: none; letter-spacing: -2px;
 }
@@ -560,7 +561,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
   font-family: var(--ff-m); font-size: 9px; letter-spacing: .14em;
   text-transform: uppercase; color: var(--mid); margin-bottom: 10px; display: block;
 }
-.wf-annotation-title { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 20px; }
+.wf-annotation-title { font-family: var(--ff-display); font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 20px; }
 .wf-callouts { display: flex; flex-direction: column; gap: 16px; }
 .wf-callout { display: flex; gap: 16px; align-items: flex-start; }
 .wf-callout-num {
@@ -1187,7 +1188,7 @@ h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 14px;
           <!-- Primary font display -->
           <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 18px;">
             <div>
-              <div style="font-size: 42px; font-weight: 700; letter-spacing: -1.5px; color: var(--dark); line-height: 1;">Aa</div>
+              <div style="font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif; font-size: 42px; font-weight: 700; letter-spacing: -1.5px; color: var(--dark); line-height: 1;">Aa</div>
               <div style="font-size: 15px; font-weight: 600; color: var(--dark); margin-top: 6px;">Source Sans Pro</div>
               <div class="sg-type-spec" style="margin-top: 2px;">Primary — Headings &amp; Body</div>
             </div>
